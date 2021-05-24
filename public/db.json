@@ -1,0 +1,73 @@
+{
+    "items": [
+        {
+            "id": 0,
+            "image": "./images/m$ms.png",
+            "name": "Напиток M$Ms",
+            "price": 250,
+            "category": 0,
+            "rating": 4
+        },
+        {
+            "id": 1,
+            "image": "./images/korean.png",
+            "name": "Корейская лапша",
+            "price": 145,
+            "category": 1,
+            "rating": 6
+        },
+        {
+            "id": 2,
+            "image": "./images/Skitles.png",
+            "name": "Напиток Skittles",
+            "price": 250,
+            "category": 1,
+            "rating": 4
+        },
+        {
+            "id": 3,
+            "image": "./images/nuttela.png",
+            "name": "Паста Nutella",
+            "price": 275,
+            "category": 2,
+            "rating": 2
+        },
+        {
+            "id": 4,
+            "image": "./images/oreo.png",
+            "name": "Смесь Oreo",
+            "price": 300,
+            "category": 3,
+            "rating": 8
+        },
+        {
+            "id": 5,
+            "image": "./images/pringles.png",
+            "name": "Чипсы Pringles",
+            "price": 170,
+            "category": 2,
+            "rating": 2
+        },
+        {
+            "id": 6,
+            "image": "./images/twix.png",
+            "name": "Напиток Twix",
+            "price": 250,
+            "category": 1,
+            "rating": 9
+        },
+        {
+            "id": 7,
+            "image": "./images/Milka.png",
+            "name": "Шоколад Milka",
+            "sizes": [
+                26,
+                30,
+                40
+            ],
+            "price": 120,
+            "category": 4,
+            "rating": 10
+        }
+    ]
+}
