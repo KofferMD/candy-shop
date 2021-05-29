@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-
 function CandyBlock({ name, image, price }) {
     return (
         <div className="candy-block">
@@ -27,12 +26,12 @@ function CandyBlock({ name, image, price }) {
 CandyBlock.propTypes = {
   name: PropTypes.string,
   image: PropTypes.string,
-  price: PropTypes.number
+  price: PropTypes.number,
 }
 
 CandyBlock.defaultProps = {
   name: 'Имя продукта',
-  price: 0
+  price: 0,
 }
 
 export default CandyBlock

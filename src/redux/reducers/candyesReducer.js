@@ -5,13 +5,21 @@ const initialState = {
 };
 
 const candyesReducer = (state = initialState, action) => {
-    if (action.type === 'SET_CANDYES') {
-        return {
-            ...state,
-            item: action.payload
-        }
+    switch (action.type) {
+        case 'SET_CANDYES':
+            return {
+                ...state,
+                items: action.payload,
+                isLoaded: true
+            }
+        case 'SET_LOADED':
+            return {
+                ...state,
+                isLoaded: action.payload,
+            }
+        default:
+            return state;
     }
-    return state;
 };
 
 export default candyesReducer;

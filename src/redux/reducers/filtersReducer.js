@@ -2,7 +2,7 @@ const SET_SORT_BY = 'SET_SORT_BY',
     SET_CATEGORY = 'SET_CATEGORY';
 
 const initialState = {
-    category: 0,
+    category: null,
     sortBy: 'popular',
 };
 
@@ -16,7 +16,7 @@ const filtersReducer = (state = initialState, action) => {
         case SET_CATEGORY:
             return {
                 ...state,
-                sortBy: action.payload
+                category: action.payload
             }
         default:
             return state
@@ -24,3 +24,4 @@ const filtersReducer = (state = initialState, action) => {
 };
 
 export default filtersReducer;
+
