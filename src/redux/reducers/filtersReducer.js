@@ -3,7 +3,10 @@ const SET_SORT_BY = 'SET_SORT_BY',
 
 const initialState = {
     category: null,
-    sortBy: 'popular',
+    sortBy: {
+        type: 'popular',
+        order: 'desc'
+    },
 };
 
 const filtersReducer = (state = initialState, action) => {

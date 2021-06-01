@@ -7,9 +7,10 @@ export const setLoaded = payload => ({
 
 export const fetchCandyes = (sortBy, category) => (dispatch) => {
     dispatch(setLoaded(false))
-    axios.get('http://localhost:3001/items').then(({ data }) => {
-        dispatch(setCandyes(data))
-    });
+    axios.get(`http://localhost:3001/items?${category !== null ? `category=${category}` : ''}&_sort=${sortBy.type}&_order=${sortBy.order}`)
+        .then(({ data }) => {
+            dispatch(setCandyes(data))
+        });
 };
 
 export const setCandyes = (items) => ({

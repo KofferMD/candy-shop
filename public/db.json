@@ -13,7 +13,7 @@
             "image": "./images/korean.png",
             "name": "Корейская лапша",
             "price": 145,
-            "category": 1,
+            "category": 4,
             "rating": 6
         },
         {
@@ -21,7 +21,7 @@
             "image": "./images/Skitles.png",
             "name": "Напиток Skittles",
             "price": 250,
-            "category": 1,
+            "category": 0,
             "rating": 4
         },
         {
@@ -29,7 +29,7 @@
             "image": "./images/nuttela.png",
             "name": "Паста Nutella",
             "price": 275,
-            "category": 2,
+            "category": 3,
             "rating": 2
         },
         {
@@ -53,20 +53,15 @@
             "image": "./images/twix.png",
             "name": "Напиток Twix",
             "price": 250,
-            "category": 1,
+            "category": 0,
             "rating": 9
         },
         {
             "id": 7,
             "image": "./images/Milka.png",
             "name": "Шоколад Milka",
-            "sizes": [
-                26,
-                30,
-                40
-            ],
             "price": 120,
-            "category": 4,
+            "category": 1,
             "rating": 10
         }
     ]
