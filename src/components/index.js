@@ -4,4 +4,5 @@ export { default as Header } from './Header';
 export { default as SortPopup } from './SortPopup'
 export { default as CandyBlock } from './CandyBlock/index'
 export { default as CandyLoadingBlock } from './CandyBlock/LoadingBlock'
+export { default as CartItem } from './CartItem'
 

@@ -6,7 +6,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import {setCategory, setSortBy } from '../redux/actions/filters'
 
 import { fetchCandyes } from '../redux/actions/candyes'
-import { addCandyesToCart } from '../redux/actions/cart'
 
 const categoryNames = ['Напитки', 'Шоколад', 'Чипсы', 'Шоколадная паста', 'Лапша из Кореи'];
 const sortItems = [
@@ -22,8 +21,6 @@ function Home() {
   const isLoaded = useSelector(({ candyes }) => candyes.isLoaded)
   const category = useSelector(({filters}) => filters.category)
   const sortBy = useSelector(({filters}) => filters.sortBy)
-
-  console.log(cartItems)
 
   React.useEffect(() => {
     dispatch(fetchCandyes(sortBy, category));
@@ -58,7 +55,7 @@ function Home() {
             { isLoaded ? items.map(obj => 
               <CandyBlock 
                onClickAddCandy={handleAddCandyToCart} 
-               addedCount={cartItems[obj.id] && cartItems[obj.id].length} 
+               addedCount={cartItems[obj.id] && cartItems[obj.id].items.length} 
                key={obj.id} {...obj} 
                />)
             : Array(8)
